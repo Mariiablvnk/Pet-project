@@ -1,0 +1,18 @@
+<div class="container  fadeInUp">
+  <mat-paginator #paginator [pageSize]="pageSize" [pageSizeOptions]="[4, 8, 12]" [showFirstLastButtons]="true" [length]="totalSize"
+  [pageIndex]="currentPage" (page)="handlePage($event)">
+</mat-paginator>
+    <div class="cardContainer fadeInUp">
+      <mat-card class="pet-card" *ngFor="let pet of dataSource">
+        <mat-card-header>
+          
+        </mat-card-header>
+        <img mat-card-image src="{{pet.image}}" alt="Photo of a Shiba Inu" routerLink="{{pet.id}}">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-flat-button  routerLink="{{pet.id}}">Детальніше</button>
+        </mat-card-actions>
+      </mat-card>
+    </div> 
+</div>

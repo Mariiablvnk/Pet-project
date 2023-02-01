@@ -1,0 +1,35 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+
+.no-select {
+    cursor: pointer;
+    user-select: none;
+}
+
+mat-icon{
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 430px) {
+    .toolbar {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 11px;
+        
+    }
+    
+}

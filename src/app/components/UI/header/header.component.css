@@ -1,0 +1,55 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    max-width: 100vw;
+    font-weight: bold;
+}
+
+.no-select {
+    cursor: pointer;
+    user-select: none;
+}
+
+mat-icon{
+    margin-right: 3px;
+}
+
+button {
+    margin-right: 5px;
+    background-color: #D5D2CE;
+}
+
+@media screen and (max-width: 430px) {
+    .example-spacer {
+        flex: 1.7 .7 auto;
+      }
+    
+    .toolbar {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        max-width: 300px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .no-select {
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    mat-icon{
+        display: none;
+    }
+    
+    button {
+        margin-right: 2px;
+        background-color: #D5D2CE;
+        font-size: 10px;
+    }
+}

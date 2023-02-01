@@ -1,0 +1,64 @@
+.container {
+    margin: 0 auto 0;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80vh;
+    
+}
+
+/* .dogUnselected {
+    visibility: hidden;
+}
+
+.catUnselected {
+    visibility: hidden;
+} */
+
+.cardContainer {
+    overflow-y: auto;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 10px;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+
+.pet-card {
+    max-width: 20vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img {
+    margin-top: 10px;
+    max-width: 100%;
+
+}
+
+@media screen and (max-width: 430px) {
+    
+    .pet-card {
+        max-width: 40vw;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img {
+        margin-top: 5px;
+        max-width: 100%;
+    
+    }
+    button {
+        font-size: 13px;
+    }
+}

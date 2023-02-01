@@ -1,0 +1,20 @@
+<style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald&family=PT+Sans&display=swap'); </style>
+<div class="container pulse">
+    <mat-card-actions>
+        <button mat-flat-button  routerLink="/pets">Повернутися</button>
+      </mat-card-actions>
+      <div class="cardContainer">
+        <mat-card class="pet-card">
+          <mat-card-header>
+            
+            <img mat-card-image src="{{pet.image}}" alt="Photo of a pet">
+          </mat-card-header>
+          <mat-card-content>
+            <mat-card-title>{{pet.title}}</mat-card-title>
+            <p>{{pet.description}}</p>
+            <p class="address">За детальною інформацією звертайтеся за телефонами в розділі "Підтримати".</p>
+          </mat-card-content>
+          
+        </mat-card>
+      </div> 
+  </div>
